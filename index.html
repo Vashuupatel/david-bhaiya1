@@ -1,0 +1,175 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday David Bhaiya!</title>
+</head>
+
+<body style="background-color: #fff0f5; text-align: center;">
+
+    <!-- TOP CLICKABLE MUSIC IMAGE -->
+
+    <div style="background-color: #4b0082; padding: 20px;">
+
+        <h2 style="color: white;">
+            🎵 A SPECIAL BIRTHDAY SURPRISE 🎵
+        </h2>
+
+        <button onclick="startMusic()"
+            style="background-color: #ff1493;
+            color: white;
+            border: 4px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;">
+
+            <img
+                src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500"
+                alt="Birthday Celebration"
+                width="250">
+
+            <h2>🎶 CLICK HERE TO START 🎶</h2>
+
+        </button>
+
+        <p style="color: #ffff00;">
+            Click the image to play birthday music!
+        </p>
+
+        <audio id="birthdayMusic" loop>
+            <source src="/html/media/bs.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <hr>
+
+    <!-- MAIN BIRTHDAY HEADER -->
+
+    <div style="background-color: #ff1493; color: white;">
+        <br>
+
+        <h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+        <h1 style="color: #ffff00;">
+            DAVID BHAIYA!
+        </h1>
+
+        <h2>🎂 🎈 🎁 🥳</h2>
+
+        <p>A Special Day For A Special Person!</p>
+
+        <br>
+    </div>
+
+    <hr>
+
+    <!-- BIRTHDAY CAKE -->
+
+    <div style="background-color: #ffe4e1;">
+        <br>
+
+        <h1 style="color: #d63384;">
+            LET'S CELEBRATE! 🎊
+        </h1>
+
+        <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
+            alt="Birthday Cake"
+            width="300">
+
+        <h2 style="color: #ff4500;">
+            Make A Wish, David Bhaiya! ❤️
+        </h2>
+
+        <p>
+            Another year of happiness, laughter
+            and beautiful memories!
+        </p>
+
+        <br>
+    </div>
+
+    <hr>
+
+    <!-- BIRTHDAY WISHES -->
+
+    <div style="background-color: #fffacd;">
+        <br>
+
+        <h1 style="color: #ff4500;">
+            ❤️ SPECIAL WISHES ❤️
+        </h1>
+
+        <h2 style="color: #9932cc;">
+            Lots Of Love!
+        </h2>
+
+        <p>
+            May your life always be filled with
+            happiness, success and beautiful memories.
+        </p>
+
+        <h1>🎁 🎈 🎉 🎂 🎊</h1>
+
+        <br>
+    </div>
+
+    <hr>
+
+    <!-- FINAL MESSAGE -->
+
+    <div style="background-color: #4b0082; color: white;">
+        <br>
+
+        <h1 style="color: #ffff00;">
+            HAPPY BIRTHDAY
+        </h1>
+
+        <h1 style="color: #ff69b4;">
+            DAVID BHAIYA! ❤️
+        </h1>
+
+        <img
+            src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700"
+            alt="Birthday Celebration"
+            width="300">
+
+        <h2>
+            Keep Smiling & Keep Shining!
+        </h2>
+
+        <p>Made With ❤️ Just For You!</p>
+
+        <h1>🎂 🎉 🥳 🎈 🎁</h1>
+
+        <br>
+    </div>
+
+    <!-- MUSIC SCRIPT -->
+
+    <script>
+        function startMusic() {
+
+            let music = document.getElementById("birthdayMusic");
+
+            music.play().then(function() {
+
+                document.querySelector("button").innerHTML =
+                    "🎶 MUSIC IS PLAYING! ❤️";
+
+            }).catch(function(error) {
+
+                alert("Please check that bs.mp3 is in the correct folder.");
+
+            });
+
+        }
+    </script>
+
+</body>
+</html>
+```
